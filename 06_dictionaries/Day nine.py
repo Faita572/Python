@@ -28,7 +28,7 @@ classroom = {
 
 #Nested loops to access nested dictionaries
 sarah_profile = classroom["Sarah"] 
-print(sarah_profile) # Prints: {'Math': 99, 'Science': 94}
+print(sarah_profile)
 
 for subject, grade in sarah_profile.items():
     print(f"Sarah's {subject} Grade: {grade}")
