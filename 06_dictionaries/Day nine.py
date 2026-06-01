@@ -18,3 +18,17 @@ for rating in movie_ratings.values():
 print("\n--- FULL REVIEW ---")
 for movie, rating in movie_ratings.items():
     print(movie + " has a rating of " + str(rating))
+
+# A loop containing dictionaries
+classroom = {
+    "Alex": {"Math": 95, "Science": 88},
+    "Sarah": {"Math": 99, "Science": 94},
+    "James": {"Math": 72, "Science": 80}
+}
+
+#Nested loops to access nested dictionaries
+sarah_profile = classroom["Sarah"] 
+print(sarah_profile) # Prints: {'Math': 99, 'Science': 94}
+
+for subject, grade in sarah_profile.items():
+    print(f"Sarah's {subject} Grade: {grade}")
