@@ -14,3 +14,6 @@ class Circle(Shape):
 
 shape = Circle(5)
 print(shape.area())
+
+### Abstraction is like "The Blueprint"
+# It hides complex implementation details and shows only the essential features... making it easier for users
