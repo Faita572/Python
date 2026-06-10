@@ -15,3 +15,5 @@ for member in party_members:
 
 
 ### Polymorphism is like "Many shapes"
+# It means that different types of objects can be treated as the same type through a common interface (like a shared function name)
+#
