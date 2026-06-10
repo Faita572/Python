@@ -16,3 +16,7 @@ class Wizard(Enemy):
 scary_wizard = Wizard("Merlin")
 scary_wizard.attack() 
 scary_wizard.cast_spell() 
+
+
+### Inheritance is just like "A family tree"
+# Instead of writing a brand new class from scratch... a new class can "inherit" (copy) all the variables and functions from an existing class

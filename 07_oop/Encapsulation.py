@@ -19,3 +19,8 @@ account = BankAccount("Alex", 100)
 
 account.deposit(50)
 account.show_balance()  # Balance is safely updated to $150
+
+
+###Encapsulation is like "The shield"
+#It's about hiding data inside an object so it can't be accidentally messed up or ruined by the outside world
+#It's done by putting a double underscore __ in front of a variable name, making it private
