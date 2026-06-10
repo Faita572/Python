@@ -12,3 +12,6 @@ party_members = [Warrior(), Medic()]
 # We loop through them and call the EXACT same function name
 for member in party_members:
     member.use_ability() 
+
+
+### Polymorphism is like "Many shapes"
