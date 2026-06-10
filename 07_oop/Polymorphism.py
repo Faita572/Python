@@ -16,4 +16,4 @@ for member in party_members:
 
 ### Polymorphism is like "Many shapes"
 # It means that different types of objects can be treated as the same type through a common interface (like a shared function name)
-#
+# Poly means many and morph means change... Polymorphism allows different classes to have functions with the exact same name but they execute those actions differently
