@@ -25,3 +25,15 @@ class SmartThermostat(SmartDevice):
     def turn_on(self):
         print(f"{self.device_name} is turned on. Adjusting temperature to 72°F")
 
+# Now we can control all devices with a single loop
+
+# Create our real objects
+living_room_light = SmartLight("Living Room Light")
+hallway_nest = SmartThermostat("Hallway Thermostat")
+
+# Put them into a single list
+my_home_devices = [living_room_light, hallway_nest]
+
+print("--- Activating Smart Home 'Away Mode' ---")
+for device in my_home_devices:
+    device.turn_on() # Polymorphism makes the light shine and the thermostat adjust!
