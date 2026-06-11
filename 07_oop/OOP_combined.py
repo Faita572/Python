@@ -13,3 +13,15 @@ class SmartDevice(ABC):
     @abstractmethod
     def turn_on(self):
         pass
+
+# Now we can create specific devices that inherit from the SmartDevice class
+# but they implement turn_on using polymorphism because they do different things when activated
+
+class SmartLight(SmartDevice):
+    def turn_on(self):
+        print(f"{self.device_name} is turned on. Setting brightness to 100%")
+
+class SmartThermostat(SmartDevice):
+    def turn_on(self):
+        print(f"{self.device_name} is turned on. Adjusting temperature to 72°F")
+
