@@ -59,3 +59,16 @@ user_2.show_family_dashboard()
 #Instead you use a input() statement to gather data from the user
 #Then you pass those inputs to your class template to create a custom object dynamically.
 
+class StreamingAccount:
+    def __init__(self, email, password):
+        self.email = email
+        self.__password = password 
+        self.__is_premium = False
+
+    # A safe way to update the password (Setter)
+    def update_password(self, old_pass, new_pass):
+        if old_pass == self.__password:
+            self.__password = new_pass
+            print("\n Success: Password updated successfully!")
+        else:
+            print("\n Error: Old password did not match. Access denied.")
