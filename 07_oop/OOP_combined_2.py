@@ -24,3 +24,16 @@ class StreamingAccount:
             
     def check_premium_status(self):
         return self.__is_premium
+    
+    #To create premium or family accounts, they need to inherit the data from the
+    #StreamingAccount class but add extra features
+
+    # FamilyAccount inherits everything from StreamingAccount
+class FamilyAccount(StreamingAccount):
+    def __init__(self, email, password, profile_limit):
+        # super() calls the parent class's __init__ to set up email and password
+        super().__init__(email, password)
+        self.profile_limit = profile_limit
+        
+    def show_family_dashboard(self):
+        print(f"Family Dashboard active with {self.profile_limit} user profiles allowed.")
