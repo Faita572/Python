@@ -72,3 +72,22 @@ class StreamingAccount:
             print("\n Success: Password updated successfully!")
         else:
             print("\n Error: Old password did not match. Access denied.")
+
+    # A safe way to upgrade the account
+    def purchase_premium(self, payment_amount):
+        if payment_amount >= 15.00:
+            self.__is_premium = True
+            print("\n Thank you! Your account is now Premium! Enjoy 4K streaming")
+        else:
+            print(f"\n Error: ${payment_amount:.2f} is not enough. Premium costs $15.00.")
+            
+    def check_premium_status(self):
+        return self.__is_premium
+
+print("======= WELCOME TO FAITA REGISTRATION =======")
+user_email = input("Enter your email address: ")
+user_password = input("Create a password: ")
+
+# We pass the user's custom inputs directly into our Class blueprint!
+my_account = StreamingAccount(user_email, user_password)
+print(f"\nAccount created successfully for {my_account.email}!\n")
