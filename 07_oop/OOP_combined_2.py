@@ -40,7 +40,7 @@ class FamilyAccount(StreamingAccount):
 
 # Testing our classes
 # Create a regular account
-user_1 = StreamingAccount("alex@email.com", "supersecure123")
+user_1 = StreamingAccount("anna@email.com", "supersecure123")
 
 # Try to update password with the wrong old password
 user_1.update_password("wrong_password", "new_password_456")
@@ -50,5 +50,5 @@ user_1.purchase_premium(15.00)
 print(f"Is user premium? {user_1.check_premium_status()}")
 
 # Create a family account
-user_2 = FamilyAccount("sarah@email.com", "familysecure456", 5)
+user_2 = FamilyAccount("barbie@email.com", "familysecure456", 5)
 user_2.show_family_dashboard()
