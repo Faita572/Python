@@ -37,3 +37,5 @@ class FamilyAccount(StreamingAccount):
         
     def show_family_dashboard(self):
         print(f"Family Dashboard active with {self.profile_limit} user profiles allowed.")
+
+# Testing our classes
