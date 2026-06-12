@@ -52,3 +52,10 @@ print(f"Is user premium? {user_1.check_premium_status()}")
 # Create a family account
 user_2 = FamilyAccount("barbie@email.com", "familysecure456", 5)
 user_2.show_family_dashboard()
+
+
+###Now let's try to make it accept user input
+#For this we don't hardcode values like user_1 = StreamingAccount("anna@email.com"). 
+#Instead you use a input() statement to gather data from the user
+#Then you pass those inputs to your class template to create a custom object dynamically.
+
