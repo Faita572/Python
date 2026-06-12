@@ -20,7 +20,7 @@ class StreamingAccount:
     def purchase_premium(self, payment_amount):
         if payment_amount >= 15.00:
             self.__is_premium = True
-            print("Thank you! Your account is now Premium ✨")
+            print("Thank you! Your account is now Premium")
             
     def check_premium_status(self):
         return self.__is_premium
@@ -39,3 +39,16 @@ class FamilyAccount(StreamingAccount):
         print(f"Family Dashboard active with {self.profile_limit} user profiles allowed.")
 
 # Testing our classes
+# Create a regular account
+user_1 = StreamingAccount("alex@email.com", "supersecure123")
+
+# Try to update password with the wrong old password
+user_1.update_password("wrong_password", "new_password_456")
+
+# Upgrade to premium
+user_1.purchase_premium(15.00)
+print(f"Is user premium? {user_1.check_premium_status()}")
+
+# Create a family account
+user_2 = FamilyAccount("sarah@email.com", "familysecure456", 5)
+user_2.show_family_dashboard()
